@@ -1,0 +1,12 @@
+/* RESET DO CSS - PADRÃO GLOBAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* DECLARANDO VARIÁVEIS NO CSS */
+html{
+    --title
+}
