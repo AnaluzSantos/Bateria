@@ -4,41 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bateria</title>
-    <!--LINK CSS EXTERNO-->
     <link rel="stylesheet" href="./css/style.css">
-    <!--LINK FAVICON - ÍCONE INSERIDO NA AREA DO NAVEGADOR-->
-     <link rel="shortcut icon" href="./css/style.css" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/headphones.svg" type="image/x-icon">
+    <title>Minha Bateria 🥁🎶🔊</title>
 </head>
 <body>
-    <!--TÍTULO DA PÁGINA-->
-    <h1>Bateria da Luz🥁🎶🔊</h1>
-    
-    <!--INÍCIO CAIXA PRINCIPAL - DIV PAI-->
-    <div class="key">
-        <!--INÍCIO CAIXAS SECUNDÁRIAS PRIMEIRA PARTE-->
-        <div class="key" data-key="keyq"></div>
-        <div class="key" data-key="keyw"></div>
-        <div class="key" data-key="keye"></div>
-        <!--FIM CAIXAS SECUNDÁRIAS PRIMEIRA PARTE-->
+    <h1>Bateria da Luz 🥁🎶🔊</h1>
+    <div class="keys">
+    <!-- inicio - CAIXAS SECUNDARIA / PRIMEIRA, SEGUNDA E TERCEIRA PARTE-->
+        <div class="key" data-key="keyq">Q</div>
+        <div class="key" data-key="keyw">W</div>
+        <div class="key" data-key="keye">E</div>
 
-         <!--INÍCIO CAIXAS SECUNDÁRIAS SEGUNDA PARTE-->
-         <div class="key" data-key="keya">A</div>
-         <div class="key" data-key="keys">S</div>
-         <div class="key" data-key="keyd">D</div>
-          <!--FIM CAIXAS SECUNDÁRIAS SEGUNDA PARTE-->
+        <div class="key" data-key="keya">A</div>
+        <div class="key" data-key="keys">S</div>
+        <div class="key" data-key="keyd">D</div>
 
-        <!--INÍCIO CAIXAS SECUNDÁRIAS TERCEIRA PARTE-->
         <div class="key" data-key="keyz">Z</div>
-         <div class="key" data-key="keyx">X</div>
-         <div class="key" data-key="keyc">C</div>
-          <!--FIM CAIXAS SECUNDÁRIAS TERCEIRA  PARTE-->
+        <div class="key" data-key="keyx">X</div>
+        <div class="key" data-key="keyc">C</div>
+    <!-- fim - CAIXAS SECUNDARIA / PRIMEIRA, SEGUNDA E TERCEIRA PARTE-->
     </div>
-    <!--FIM CAIXA PRINCIPAL - DIV PAI-->
+    
+    <!--CAIXA DO BOTÃO ENVIAR-->
     <div class="composer">
-        <!--INÍCIO CAIXA INPUT - INSERIR DADOS-->
-        <input type="text" id="input" placeholder="Faça sua composição">
-        <!--FIM CAIXA INPUT - INSERIR DADOS-->
+        <input type="text" id="input" placeholder="Faça a sua composição">
+        <button>Tocar</button>
     </div>
+    <!--rodapé - footer-->
+    <footer>Criado e desenvolvido por <strong>Analuz Santos</strong></footer>
+
+    <!--inicio - TAGS DE ÁUDIO - INICIO / PRIMEIRA, SEGUNDA E TERCEIRA PARTE-->
+    <audio src="./sounds/keyq.wav" id="s_keya"></audio>
+    <audio src="./sounds/keyw.wav" id="s_keys"></audio>
+    <audio src="./sounds/keye.wav" id="s_keyd"></audio>
+
+    <audio src="./sounds/keya.wav" id="s_keya"></audio>
+    <audio src="./sounds/keys.wav" id="s_keys"></audio>
+    <audio src="./sounds/keyd.wav" id="s_keyd"></audio>
+
+    <audio src="./sounds/keyz.wav" id="s_keyz"></audio>
+    <audio src="./sounds/keyx.wav" id="s_keyx"></audio>
+    <audio src="./sounds/keyc.wav" id="s_keyc"></audio>
+    <!--fim -TAGS DE ÁUDIO - INICIO / PRIMEIRA, SEGUNDA E TERCEIRA PARTE-->
+
+    <!-- SCRIPT JS-->
+    <script src="./javascript/script.js"></script>
 </body>
 </html>
